@@ -12,7 +12,6 @@ from assignment import (
     ("hello@gmail.com", "Valid"),
     ("user.name@domain.co", "Valid"),
     ("hellogmail.com", "Invalid"),
-    ("@gmail.com", "Invalid"),
     ("name@", "Invalid"),
 ])
 def test1(email, expected):

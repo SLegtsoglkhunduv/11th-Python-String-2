@@ -10,7 +10,7 @@ https://drive.google.com/file/d/1JE02xr12iIN_EY8-slrw2Wx0KqwH00pN/view?usp=shari
 
 **Problem:**
 
-Input a string and check if it looks like a valid email address (contains "@" and "." in the correct order).
+Input a string and check if it looks like a valid email address (contains "@" and ".").
 
 **Example:**
 

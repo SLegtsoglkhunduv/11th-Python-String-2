@@ -60,11 +60,14 @@ Input a sentence that might contain a year, and extract it.
 
 **Example**
 
-	Input: I was born in 2008.
+	Input: I was born in 2008
 	Output: 2008
 
 	Input: World Cup 2010 was amazing!
 	Output: 2010
+
+	Input: No year in here
+	Output: ""
 
 ---
 ## Exercise 5

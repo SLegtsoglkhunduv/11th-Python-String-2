@@ -79,9 +79,9 @@ Input a sentence and check if it’s a palindrome (ignoring spaces and punctuati
 **Example**
 
 	Input: Never odd or even
-	Output: Palindrome
+	Output: True
 
 	Input: Hello World
-	Output: Not palindrome
+	Output: False
 ---
 

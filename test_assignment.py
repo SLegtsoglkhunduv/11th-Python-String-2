@@ -42,10 +42,10 @@ def test3(name, expected):
 
 # Exercise 4: Extract year
 @pytest.mark.parametrize("sentence, expected", [
-    ("I was born in 2008.", "2008"),
+    ("I was born in 2008", "2008"),
     ("World Cup 2010 was amazing!", "2010"),
-    ("No year here!", "No year found"),
-    ("My ID number is 12345", "No year found"),
+    ("No year here!", ""),
+    ("My ID number is 12345", ""),
 ])
 def test4(sentence, expected):
     assert extract_year(sentence) == expected

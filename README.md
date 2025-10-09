@@ -67,7 +67,7 @@ Input a sentence that might contain a year, and extract it.
 	Output: 2010
 
 	Input: No year in here
-	Output: ""
+	Output: False
 
 ---
 ## Exercise 5

@@ -10,25 +10,32 @@ https://drive.google.com/file/d/1JE02xr12iIN_EY8-slrw2Wx0KqwH00pN/view?usp=shari
 
 **Problem:**
 
-Input a string and print the number of characters in it.
+Input a string and check if it looks like a valid email address (contains "@" and "." in the correct order).
 
 **Example:**
 
-	Input:  Hello world
-	Output: 11
-
+	Example:
+	Input: hello@gmail.com
+	Output: Valid
+	
+	Input: hellogmail.com
+	Output: Invalid
+	
 ---
 
 ## Exercise 2
 
 **Problem:**
 
-Input a string and remove all spaces from it.
+Write a program that shortens long text messages by removing vowels.
 
 **Example:**
 
-	Input:  Python is fun
-	Output: Pythonisfun
+	Input: Please call me tomorrow
+	Output: Pls cll m tmrrw
+	
+	Input: Python is amazing
+	Output: Pythn s mzng
 
 ---
 
@@ -36,50 +43,42 @@ Input a string and remove all spaces from it.
 
 **Problem:**
 
-Input a sentence and count the vowels.
+Input a full name and give initials in uppercase with dots.
 
 **Example**
 
-	Input:  Python is amazing
-	Output: 5
+	Input: elon musk
+	Output: E.M.
+	
 ---
 
 ## Exercise 4
 
 **Problem:**
 
-Input a string and replace all vowels (a, e, i, o, u) with *.
+Input a sentence that might contain a year, and extract it.
 
 **Example**
 
-	Input:  Education
-	Output:  *d*c*t**n
+	Input: I was born in 2008.
+	Output: 2008
+
+	Input: World Cup 2010 was amazing!
+	Output: 2010
 
 ---
 ## Exercise 5
 
 **Problem:**
 
-Input a sentence, use .split() to count and print how many words it has.
+Input a sentence and check if it’s a palindrome (ignoring spaces and punctuation).
 
 **Example**
 
-	Input:  Python makes coding fun
-	Output: 4
+	Input: Never odd or even
+	Output: Palindrome
 
+	Input: Hello World
+	Output: Not palindrome
 ---
 
-
-## Exercise 6
-
-**Problem:**
-
-Input a sentence, split it into words, and print the longest one.
-
-**Example**
-
-	Input:  Learning Python programming
-	Output: programming
-
-
----

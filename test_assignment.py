@@ -1,5 +1,5 @@
 import pytest
-from string_exercises import (
+from assignment import (
     is_valid_email,
     remove_vowels,
     get_initials,

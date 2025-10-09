@@ -44,8 +44,8 @@ def test3(name, expected):
 @pytest.mark.parametrize("sentence, expected", [
     ("I was born in 2008", "2008"),
     ("World Cup 2010 was amazing!", "2010"),
-    ("No year here!", ""),
-    ("My ID number is 12345", ""),
+    ("No year here!", False),
+    ("My ID number is 12345", False),
 ])
 def test4(sentence, expected):
     assert extract_year(sentence) == expected
@@ -53,11 +53,11 @@ def test4(sentence, expected):
 
 # Exercise 5: Palindrome check
 @pytest.mark.parametrize("text, expected", [
-    ("Never odd or even", "Palindrome"),
-    ("Hello World", "Not palindrome"),
-    ("A man a plan a canal Panama", "Palindrome"),
-    ("Was it a car or a cat I saw", "Palindrome"),
-    ("Random text", "Not palindrome"),
+    ("Never odd or even", True),
+    ("Hello World", False),
+    ("A man a plan a canal Panama", True),
+    ("Was it a car or a cat I saw", True),
+    ("Random text", False),
 ])
 def test5(text, expected):
     assert is_palindrome(text) == expected

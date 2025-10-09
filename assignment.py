@@ -1,8 +1,5 @@
 def is_valid_email(email):
     if "@" in email and "." in email:
-        at_index = email.index("@")
-        dot_index = email.rindex(".")
-        if at_index < dot_index:
             return "Valid"
     return "Invalid"
 def remove_vowels(text):

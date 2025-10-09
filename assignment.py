@@ -1,31 +1,34 @@
-# You can remove 'pass' if you written code in the function 
-
-# Exercise 1
-def is_valid_email(text):
-    # Write your code here
-    pass
-
-# Exercise 2
+def is_valid_email(email):
+    if "@" in email and "." in email:
+        at_index = email.index("@")
+        dot_index = email.rindex(".")
+        if at_index < dot_index:
+            return "Valid"
+    return "Invalid"
 def remove_vowels(text):
-    # Write your code here
-    pass
-
-# Exercise 3
-def get_initials(text):
-    # Write your code here
-    pass
-
-# Exercise 4
-def extract_year(text):
-    # Write your code here
-    pass
-
-# Exercise 5
-def is_palindrome(text):
-    # Write your code here
-    pass
-
-# Exercise 6
-def find_longest_word(text):
-    # Write your code here
-    pass
+    vowels = "aeiouAEIOU"
+    result = ""
+    for ch in text:
+        if ch not in vowels:
+            result += ch
+    return result
+def get_initials(name):
+    parts = name.split()
+    initials = ""
+    for p in parts:
+        initials += p[0].upper() + "."
+    return initials
+def extract_year(sentence):
+    words = sentence.split()
+    for word in words:
+        if word.isdigit() and len(word) == 4:
+            return word
+        if len(word) == 5 and word[:-1].isdigit() and word[-1] in ".!?":
+            return word[:-1]
+    return False
+def is_palindrome(sentence):
+    text = ""
+    for ch in sentence.lower():
+        if ch.isalnum():  # only letters and numbers
+            text += ch
+    return text == text[::-1]
